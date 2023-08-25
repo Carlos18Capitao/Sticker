@@ -25,7 +25,7 @@ const Home = (props) => {
             <Text style={styles.title}>ALFAIATE PERFEITO</Text>
             <Text style={styles.detail}>Que todas as coisas ocorram com decência e ordem.
             </Text>
-            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Detail")}>
+            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("novocliente")}>
                 <Image source={require('../img/client.png')} style={styles.icon_img} />
                 <Text style={styles.text}>novo cliente</Text>
             </TouchableOpacity>
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 20,
         backgroundColor: "#e2443b",
-        paddingHorizontal: 130,
+        paddingHorizontal: 120,
         paddingVertical: 10,
         borderRadius: 30
     },
