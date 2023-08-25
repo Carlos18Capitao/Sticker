@@ -1,4 +1,5 @@
 import React from "react";
+import Feather from "@expo/vector-icons/Feather";
 import { StyleSheet, Text, View, Image } from "react-native";
 import {
     useFonts,
@@ -15,17 +16,22 @@ const Home = (props) => {
     })
     return (
         <View style={styles.container}>
+            <View style={styles.header}>
+				<TouchableOpacity onPress={()=> props.navigation.goBack()}>
+					<Feather name="chevron-left" color="#ffffff" size={25} />
+				</TouchableOpacity>
+			</View>
             <Image source={require('../img/s55-black.jpeg')} style={styles.img} />
             <Text style={styles.title}>ALFAIATE PERFEITO</Text>
             <Text style={styles.detail}>Que todas as coisas ocorram com decência e ordem.
             </Text>
-            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Portugal")}>
-                <Image source={require('../img/portugal-2.png')} style={styles.icon_img} />
-                <Text style={styles.text}>Portugal</Text>
+            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Detail")}>
+                <Image source={require('../img/client.png')} style={styles.icon_img} />
+                <Text style={styles.text}>novo cliente</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Detail")}>
-                <Image source={require('../img/angola-2.png')} style={styles.icon_img} />
-                <Text style={styles.text}>Angola</Text>
+                <Image source={require('../img/target.png')} style={styles.icon_img} />
+                <Text style={styles.text}>todos clientes</Text>
             </TouchableOpacity>
         </View>
     );
@@ -40,6 +46,14 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         backgroundColor: "#000"
     },
+    header: {
+		flexDirection: "row",
+		alignItems: "center",
+		justifyContent: "space-between",
+		width: "100%",
+		paddingHorizontal: 20,
+		paddingTop: 50,
+	},
     img: {
         height: "50%",
         width: "100%",
@@ -78,7 +92,7 @@ const styles = StyleSheet.create({
     },
     text: {
         //fontFamily: "Montserrat_600SemiBold",
-        fontSize: 30,
+        fontSize: 20,
         color: "#fff",
     }
 });
