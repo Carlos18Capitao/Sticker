@@ -43,13 +43,13 @@ const styles = StyleSheet.create({
     },
     title: {
         color: "#fff",
-        fontFamily: "MontSerrat_700Bold",
+        //fontFamily: "MontSerrat_700Bold",
         fontSize: 30,
         marginTop: 20
     },
     detail: {
         color: "#fff",
-        fontFamily: "Montserrat_400Regular",
+        //fontFamily: "Montserrat_400Regular",
         fontSize: 18,
         textAlign: "center",
         paddingHorizontal: 20,
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         borderRadius: 30
     },
     text: {
-        fontFamily: "Montserrat_600SemiBold",
+        //fontFamily: "Montserrat_600SemiBold",
         fontSize: 30,
         color: "#fff",
     }
