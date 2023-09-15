@@ -6,6 +6,8 @@ import { AppLoading } from 'expo'
 
 export default function App() {
   return (
-    <NavigationContainer><HomeStackNavigator /></NavigationContainer>
+    <NavigationContainer>
+      <HomeStackNavigator />
+    </NavigationContainer>
   );
 }

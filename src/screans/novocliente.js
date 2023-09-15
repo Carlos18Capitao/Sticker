@@ -8,7 +8,7 @@ import {
     Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 import { TouchableOpacity } from "react-native";
-const Home = (props) => {
+const Novocliente = (props) => {
     const [fontsLoaded] = useFonts({
         Montserrat_400Regular,
         Montserrat_600SemiBold,
@@ -45,7 +45,7 @@ const Home = (props) => {
     );
 }
 
-export default Home;
+export default Novocliente;
 
 const styles = StyleSheet.create({
     container: {

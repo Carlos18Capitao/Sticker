@@ -8,7 +8,7 @@ import {
     Montserrat_700Bold,
 } from '@expo-google-fonts/montserrat';
 import { TouchableOpacity } from "react-native";
-const Home = (props) => {
+const Portugal = (props) => {
     const [fontsLoaded] = useFonts({
         Montserrat_400Regular,
         Montserrat_600SemiBold,
@@ -29,7 +29,7 @@ const Home = (props) => {
                 <Image source={require('../img/client.png')} style={styles.icon_img} />
                 <Text style={styles.text}>novo cliente</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("Detail")}>
+            <TouchableOpacity style={styles.btn} onPress={()=>props.navigation.navigate("ClientList")}>
                 <Image source={require('../img/target.png')} style={styles.icon_img} />
                 <Text style={styles.text}>todos clientes</Text>
             </TouchableOpacity>
@@ -37,7 +37,7 @@ const Home = (props) => {
     );
 }
 
-export default Home;
+export default Portugal;
 
 const styles = StyleSheet.create({
     container: {
